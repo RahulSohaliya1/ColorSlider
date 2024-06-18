@@ -241,6 +241,7 @@ extension ColorSlider {
         switch orientation {
         case .horizontal:
             let boundedTouchX = (0..<bounds.width).clamp(point.x)
+            print("0")
             previewView?.center = CGPoint(x: boundedTouchX, y: bounds.midY)
         case .vertical:
             let boundedTouchY = (0..<bounds.height).clamp(point.y)
